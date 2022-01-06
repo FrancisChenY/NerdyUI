@@ -591,7 +591,7 @@ NER_SYNTHESIZE_BLOCK(nerTextChangeBlock, setNerTextChangeBlock, NERObjectBlock, 
         tf.placeholder = @" ";
         
         @try {
-            color = [tf valueForKeyPath:@"_placeholderLabel.textColor"];
+            color = [tf valueForKeyPath:@"placeholderLabel.textColor"];
         } @catch (NSException *exception) {}
         
         if (!color) {
