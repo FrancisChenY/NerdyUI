@@ -9,8 +9,8 @@
 #import "NERAlertMaker.h"
 #import "NERDefs.h"
 
-#define Alert           [[NERAlertMaker alloc] initWithStyle:UIAlertControllerStyleAlert]
-#define ActionSheet     [[NERAlertMaker alloc] initWithStyle:UIAlertControllerStyleActionSheet]
+#define NERAlert           [[NERAlertMaker alloc] initWithStyle:UIAlertControllerStyleAlert]
+#define NERActionSheet     [[NERAlertMaker alloc] initWithStyle:UIAlertControllerStyleActionSheet]
 
 typedef NERAlertMaker *(^NERChainableNERAlertMakerActionBlock)(id, id);
 typedef UIAlertController *(^NERAlertShowBlock)();
